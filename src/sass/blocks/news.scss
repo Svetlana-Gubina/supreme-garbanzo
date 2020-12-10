@@ -1,0 +1,72 @@
+.news {
+    @include indent();
+    padding: 1%;
+    margin-bottom: 10px;
+    @include flex();
+    flex-direction: column;
+    outline: 2px dashed purple;
+    background-color: palegoldenrod;
+}
+
+.news__title {
+    @include indent();
+    font-size: 18px;
+    padding: 0.2em;
+    margin-bottom: 10px;
+}
+
+.news__list {
+    @include list();
+    @include indent();
+    @include flex();
+    flex-direction: column;
+}
+
+.news__item {
+    @include indent();
+    margin-bottom: 10px;
+    @include flex();
+    background-color: lightblue;
+}
+
+.news__link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+    // display: block;
+    padding: 0.5em;
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+}
+
+.news__time {
+    display: block;
+    font-weight: bold;
+}
+
+.news__all {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+    // display: block;
+    padding: 0.5em;
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+}

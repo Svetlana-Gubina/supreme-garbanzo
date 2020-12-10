@@ -60,10 +60,5 @@
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.6.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run build"
-    }
   }
 }

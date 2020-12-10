@@ -1,0 +1,16 @@
+.plans {
+    @include indent();
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    outline: 2px dashed purple;
+    background-color: palegoldenrod;
+}
+
+.plans__text {
+    @include indent();
+    font-size: 14px;
+    line-height: 2.2;
+    padding: 0.5em;
+    text-align: center;
+}

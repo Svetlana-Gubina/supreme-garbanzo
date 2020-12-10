@@ -2,24 +2,53 @@
     width: 100%;
     max-width: 100%;
     @include indent();
-    padding: 2%;
-    margin-bottom: 10px;
+    @include flex();
+    min-height: 300px;
 
+    background-image: url("../../img/color-cat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__inner {
+    @include indent();
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.header__flex{
+    @include indent();
     @include flex();
     justify-content: space-between;
     align-self: center;
-
-    background-color: pink;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    color: white;
 }
 
 .header__title {
     @include indent();
+    padding-top: 20px;
     @include flex();
     flex-direction: column;
     max-width: 50%;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    outline: 2px dashed rebeccapurple;
+    text-align: center;
+
+    // max-height: 50px;
 }
 
 .header__title-span {
-    font-size: 12px;
+    text-transform: none;
+    letter-spacing: 20px;
+    font-size: 11px;
+    letter-spacing: normal;
     @include indent();
 }

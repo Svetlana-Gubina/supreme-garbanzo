@@ -1,11 +1,11 @@
 .main {
     @include indent();
-    // padding: 2%;
+    margin-bottom: 10px;
     
     @include flex();
     flex-direction: column;
 
-    background-color: lavender;
+    background-color: palegoldenrod;
 }
 
 .main__presentation {
@@ -17,6 +17,13 @@
 
 .main__presentation-text {
     @include indent();
+    font-size: 14px;
+    line-height: 1.8;
     padding: 0.5em;
     text-align: center;
+}
+
+.main__presentation-img {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
 }
