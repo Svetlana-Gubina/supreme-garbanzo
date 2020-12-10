@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    max-width: 100%;
+    @include indent();
+    padding: 2%;
+    margin-bottom: 10px;
+
+    @include flex();
+    justify-content: space-between;
+    align-self: center;
+
+    background-color: pink;
+}
+
+.header__title {
+    @include indent();
+    @include flex();
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.header__title-span {
+    font-size: 12px;
+    @include indent();
+}

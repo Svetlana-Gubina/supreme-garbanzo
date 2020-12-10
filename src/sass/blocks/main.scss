@@ -1,0 +1,22 @@
+.main {
+    @include indent();
+    // padding: 2%;
+    
+    @include flex();
+    flex-direction: column;
+
+    background-color: lavender;
+}
+
+.main__presentation {
+    @include indent();
+    padding: 2%;
+    margin-bottom: 10px;
+    outline: 2px dashed purple;
+}
+
+.main__presentation-text {
+    @include indent();
+    padding: 0.5em;
+    text-align: center;
+}

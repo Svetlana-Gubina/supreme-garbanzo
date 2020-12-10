@@ -1,11 +1,16 @@
 .wrapper {
-  width: 100%;
-  min-width: $mobile-width;
+  // width: 100%;
+  // max-width: $desktop-width;
+  // min-width: $mobile-width;
+
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 4px dashed crimson;
+
   height: auto;
   @include indent();
-
-  @include media-tablet {
-    // width: 500px;
-  }
+  @include flex();
+  flex-direction: column;
 }
 

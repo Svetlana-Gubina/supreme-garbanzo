@@ -1,0 +1,22 @@
+.main-nav {
+    outline: 2px dashed hotpink;
+    @include indent();
+    @include flex();
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.main-nav__toggle {
+    @include indent();
+    width: 50px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 none;
+    background-color: hotpink; // transparent;
+    font-size: 0;
+}
+
+.main-nav__list {
+    display: none;
+}

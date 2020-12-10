@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "TEMPLATE_GULP",
+  "name": "template_gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Сборка gulp",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp start",
