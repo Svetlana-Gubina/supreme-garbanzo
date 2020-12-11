@@ -3,11 +3,12 @@
     max-width: 100%;
     @include indent();
     @include flex();
-    min-height: 350px;
+    min-height: 420px;
 
     background-image: url("../../img/color-cat-2.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
+    background-position: center 100%;
 }
 
 .header__inner {
@@ -27,6 +28,7 @@
     max-width: 100%;
     padding: 10px;
     outline: 2px dashed red;
+    background-color: beige;
     // color: white;
 }
 

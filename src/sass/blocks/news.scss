@@ -70,3 +70,21 @@
         opacity: 0.8;
     }
 }
+
+.news .news__container {
+    @include indent();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.news .news__title {
+    @include indent();
+    font-size: 18px;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: center;
+}
