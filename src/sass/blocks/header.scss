@@ -3,9 +3,9 @@
     max-width: 100%;
     @include indent();
     @include flex();
-    min-height: 300px;
+    min-height: 350px;
 
-    background-image: url("../../img/color-cat.jpg");
+    background-image: url("../../img/color-cat-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,7 +14,7 @@
     @include indent();
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(5px);
+    // backdrop-filter: blur(5px);
     position: relative;
 }
 
@@ -26,7 +26,8 @@
     width: 100%;
     max-width: 100%;
     padding: 10px;
-    color: white;
+    outline: 2px dashed red;
+    // color: white;
 }
 
 .header__title {
@@ -41,7 +42,7 @@
     text-transform: uppercase;
     outline: 2px dashed rebeccapurple;
     text-align: center;
-
+    font-weight: normal;
     // max-height: 50px;
 }
 
@@ -49,6 +50,7 @@
     text-transform: none;
     letter-spacing: 20px;
     font-size: 11px;
-    letter-spacing: normal;
+    letter-spacing: 1px;
     @include indent();
+    width: 100%;
 }

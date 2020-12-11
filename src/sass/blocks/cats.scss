@@ -14,7 +14,7 @@
     @include flex();
     justify-content: center;
     align-self: center;
-    background-color: pink;
+    background-color: #ffffff;
 
     min-height: 100px;
 }
@@ -26,6 +26,10 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8;
+    outline: 2px dashed purple;
+    @include flex();
+    justify-content: center;
+    align-self: center;
 
     &:hover,
     &:focus {

@@ -1,17 +1,18 @@
 .main {
     @include indent();
+    padding: 10px;
     margin-bottom: 10px;
-    
     @include flex();
     flex-direction: column;
 
-    background-color: palegoldenrod;
+    background-color: beige;
 }
 
 .main__presentation {
     @include indent();
     padding: 2%;
     margin-bottom: 10px;
+    background-color: #ffffff;
     outline: 2px dashed purple;
 }
 
@@ -21,6 +22,10 @@
     line-height: 1.8;
     padding: 0.5em;
     text-align: center;
+}
+
+.main__presentation--contact {
+    font-weight: bold;
 }
 
 .main__presentation-img {

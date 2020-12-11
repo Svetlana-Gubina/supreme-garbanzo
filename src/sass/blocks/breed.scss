@@ -1,0 +1,35 @@
+.breed__container {
+    @include indent();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffffff;
+    background-image: url("../../img/coon.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: content;
+}
+
+.breed__title {
+    @include indent();
+    padding: 0.2em;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+
+.breed__text {
+    font-size: 14px;
+    line-height: 1.8;
+    @include indent();
+    margin-bottom: 10px;
+    padding: 0.5em;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}

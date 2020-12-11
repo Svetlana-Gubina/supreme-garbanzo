@@ -1,0 +1,39 @@
+.about__container {
+    @include indent();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+.about__text {
+    font-size: 14px;
+    line-height: 1.8;
+    @include indent();
+    margin-bottom: 10px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.about__img {
+    display: block;
+    box-shadow: 0 0 10px 10px beige;
+}
+
+.about__link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+}
