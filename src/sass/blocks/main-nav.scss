@@ -37,6 +37,14 @@
     left: 0;
     width: 100%;
     max-width: 100%;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          position: static;
+          flex-direction: row;
+          background-color: transparent;
+        }
+    }
 }
 
 .menu-close {

@@ -9,6 +9,14 @@
     background-repeat: no-repeat;
     // background-size: cover;
     background-position: center 100%;
+
+    @include media-tablet {
+        margin-bottom: 40px;
+        box-shadow: 0 10px 20px 10px black;
+        background-color: black;
+        background-image: url("../../img/dark-cat.jpg");
+        background-position: 80% 20%;
+    }
 }
 
 .header__inner {
@@ -30,6 +38,10 @@
     outline: 2px dashed red;
     background-color: beige;
     // color: white;
+
+    @include media-tablet {
+        background-color: transparent;
+    }
 }
 
 .header__title {

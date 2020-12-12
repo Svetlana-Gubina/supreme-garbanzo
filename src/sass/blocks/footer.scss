@@ -2,6 +2,12 @@
     @include indent();
     @include flex();
     flex-direction: column;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          background-color: darkgray;
+        }
+    }
 }
 
 .footer__title {

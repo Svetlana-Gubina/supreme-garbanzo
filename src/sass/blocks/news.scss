@@ -6,6 +6,13 @@
     flex-direction: column;
     outline: 2px dashed purple;
     background-color: beige;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          background-color: transparent;
+          padding: 2%;
+        }
+    }
 }
 
 .news__title {
@@ -13,6 +20,16 @@
     font-size: 18px;
     padding: 0.2em;
     margin-bottom: 10px;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          outline: 2px dashed purple;
+          font-size: 25px;
+          letter-spacing: 2px;
+          color: white;
+          margin-bottom: 20px;
+        }
+    }
 }
 
 .news__list {
@@ -20,6 +37,14 @@
     @include indent();
     @include flex();
     flex-direction: column;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          flex-direction: row;
+          justify-content: center;
+          margin-bottom: 20px;
+        }
+    }
 }
 
 .news__item {
@@ -27,6 +52,16 @@
     margin-bottom: 10px;
     @include flex();
     background-color: #ffffff;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          margin: 20px;
+          max-width: 40%;
+          background-color: rgba(0, 0, 0, 0.2em);
+          box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3em);
+          border-radius: 10px;
+        }
+    }
 }
 
 .news__link {
@@ -45,11 +80,25 @@
     &:active {
         opacity: 0.8;
     }
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          color: #ffffff;
+          line-height: 2;
+        }
+    }
 }
 
 .news__time {
     display: block;
     font-weight: bold;
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          letter-spacing: 3px;
+          margin-bottom: 10px;
+        }
+    }
 }
 
 .news__all {
@@ -58,8 +107,9 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8;
-    // display: block;
-    padding: 0.5em;
+    display: block;
+    padding: 0.5em 1em;
+    padding-right: 3em;
 
     &:hover,
     &:focus {
@@ -68,6 +118,35 @@
 
     &:active {
         opacity: 0.8;
+    }
+
+    @include media-tablet {
+        @media screen and (min-width: $tablet-width) {
+          position: relative;
+          color: #ffffff;
+          font-size: 16px;
+          letter-spacing: 3px;
+          outline: 2px dashed purple;
+          width: 150px;
+          max-width: 100%;
+          background-color: rgba(0, 0, 0, 0.2em);
+          border-radius: 10px;
+          margin-left: auto;
+          margin-right: 50px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 20%;
+            right: 5px;
+            width: 2em;
+            height: 1.5em;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z' fill='%23ffffff'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
+          }
+        }
     }
 }
 
