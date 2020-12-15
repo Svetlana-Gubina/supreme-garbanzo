@@ -22,6 +22,9 @@ body {
   @include media-tablet {
     @media screen and (min-width: $tablet-width) {
       background: linear-gradient(#000000, rgb(17, 58, 17));
+      // background-image: url("../img/pattern.jpg");
+      // background-repeat: no-repeat;
+      // background-size: cover;
     }
 }
 }

@@ -1,12 +1,19 @@
 .footer {
     @include indent();
-    @include flex();
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+
+    // include flex();
+    // lex-direction: column;
 
     @include media-tablet {
-        @media screen and (min-width: $tablet-width) {
-          background-color: darkgray;
-        }
+        background-color: darkgray;
+        background-image: url("../../img/dark-pattern.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        color: rgb(6, 46, 6);
     }
 }
 
@@ -16,6 +23,25 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.8;
+
+    @include media-tablet {
+        font-size: 18px;
+    }
+}
+
+.footer__container {
+    @include indent();
+    width: 100%;
+    max-width: 100%;
+    @include flex();
+    flex-direction: column;
+
+    @include media-tablet {
+        outline: 2px dashed rebeccapurple;
+        text-align: center;
+        background-color: rgba(250, 250, 250, 0.8);
+        backdrop-filter: blur(3px);
+    }
 }
 
 .footer__name,
@@ -25,6 +51,10 @@
     padding: 0.5em;
     font-size: 14px;
     line-height: 1.8;
+
+    @include media-tablet {
+        font-size: 18px;
+    }
 }
 
 .footer__tel-link,
@@ -34,6 +64,7 @@
     font-size: 14px;
     line-height: 1.8;
     font-weight: bold;
+    color: rgb(6, 46, 6);
 
     &:hover,
     &:focus {
@@ -57,6 +88,13 @@
     justify-content: space-between;
     align-items: center;
     width: 120px;
+    outline: 2px dashed rebeccapurple;
+
+    @include media-tablet {
+       width: 200px;
+       margin-right: auto;
+       margin-left: auto;
+    }
 }
 
 .footer__social-item {
@@ -82,4 +120,11 @@
     &:active svg {
         opacity: 0.8;
     }
+
+    @include media-tablet {
+        & svg {
+            width: 30px;
+            height: 30px;
+        }
+     }
 }
