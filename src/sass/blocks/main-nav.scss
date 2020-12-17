@@ -1,9 +1,18 @@
 .main-nav {
     @include indent();
     @include flex();
-    height: 50px;
     margin-right: 10px;
     margin-top: 10px;
+
+    @include media-tablet {
+        // outline: 2px dashed yellow;
+    }
+
+    @include media-custom(1024px) {
+        max-width: 50%;
+        height: auto;
+        margin-right: 50px;
+    }
 }
 
 .main-nav__toggle {
@@ -20,6 +29,10 @@
     background-size: 60% 60%;
     background-color: transparent;
     cursor: pointer;
+
+    @include media-custom(1024px) {
+        display: none;
+    }
 }
 
 .main-nav__toggle-close {
@@ -31,19 +44,29 @@
     @include flex();
     flex-direction: column;
     @include list();
-    background-color: beige;
+    background-color: #f3efe9;
     position: absolute;
     top: 85px;
     left: 0;
     width: 100%;
     max-width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    min-height: 400px;
 
     @include media-tablet {
-        @media screen and (min-width: $tablet-width) {
-          position: static;
-          flex-direction: row;
-          background-color: transparent;
-        }
+        top: 105px;
+    }
+
+    @include media-custom(1024px) {
+        position: static;
+        flex-direction: row;
+        min-height: auto;
+    }
+
+    @include media-custom(1024px) {
+        background-color: transparent;
+        justify-content: space-between;
     }
 }
 
@@ -63,6 +86,7 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 2px;
 
     &:hover,
     &:focus {
@@ -72,8 +96,17 @@
     &:active {
         opacity: 0.8;
     }
+
+    @include media-tablet {
+        font-size: 16px;
+        padding: 0.2em 1em;
+    }
+
+    @include media-custom(1024px) {
+        margin-right: 10px;
+    }
 }
 
 .main-nav__link--active {
-    color: #a59d2ae3;
+    color: rgba(122, 85, 16, 0.8);
 }

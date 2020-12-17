@@ -1,21 +1,23 @@
 .header {
     width: 100%;
     max-width: 100%;
+    min-width: $mobile-width;
     @include indent();
     @include flex();
-    min-height: 420px;
 
-    background-image: url("../../img/color-cat-2.jpg");
+    min-height: 450px;
+    // background-image: url("../../img/color-cat-2.jpg");
+    // background-image: url("../../img/coon.jpg");
+    background-image: url("../../img/cat-new.jpg");
     background-repeat: no-repeat;
-    // background-size: cover;
-    background-position: center 100%;
-
+    background-size: cover;
+    
     @include media-tablet {
-        margin-bottom: 40px;
-        box-shadow: 0 10px 20px 10px black;
-        background-color: black;
-        background-image: url("../../img/dark-cat.jpg");
-        background-position: 80% 20%;
+        background-position: center top;
+    }
+
+    @include media-custom(1024px) {
+        min-height: 650px;
     }
 }
 
@@ -23,7 +25,6 @@
     @include indent();
     width: 100%;
     height: 100%;
-    // backdrop-filter: blur(5px);
     position: relative;
 }
 
@@ -34,37 +35,88 @@
     align-self: center;
     width: 100%;
     max-width: 100%;
-    padding: 10px;
-    outline: 2px dashed red;
-    background-color: beige;
-    // color: white;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    // background-color: #f3efe9;
+    // box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3em);
 
     @include media-tablet {
-        background-color: transparent;
+        padding: 20px;
+    }
+
+    @include media-custom(1024px) {
+        padding: 45px;
     }
 }
 
 .header__title {
     @include indent();
-    padding-top: 20px;
+    padding-top: 10px;
     @include flex();
     flex-direction: column;
-    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
     font-size: 18px;
     line-height: 1;
     letter-spacing: 10px;
-    text-transform: uppercase;
-    outline: 2px dashed rebeccapurple;
     text-align: center;
-    font-weight: normal;
-    // max-height: 50px;
+    border-bottom: 1px solid crimson;
+
+    @include media-tablet {
+        margin-left: 20px;
+    }
+
+    @include media-custom(1024px) {
+        margin-left: 50px;
+    }
 }
 
-.header__title-span {
-    text-transform: none;
-    letter-spacing: 20px;
-    font-size: 11px;
-    letter-spacing: 1px;
+.header__title--top {
+    @include flex();
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 28px;
+    width: 100%;
+
+    @include media-tablet {
+        font-size: 34px;
+        letter-spacing: 13px;
+    }
+
+    @include media-custom(1024px) {
+        letter-spacing: 18px;
+    }
+}
+
+.header__title--m {
+    font-family: 'Courgette', cursive;
+    color: crimson;
+    text-transform: uppercase;
+    @include flex();
+    justify-content: center;
+    padding: 0;
+
+    @include media-custom(1024px) {
+        font-size: 45px;
+    }
+}
+
+.header__title-bottom {
+    font-size: 12px;
+    letter-spacing: 1.5px;
     @include indent();
     width: 100%;
+    padding: 0.5em 0;
+
+    @include media-tablet {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    @include media-custom(1024px) {
+        font-size: 16px;
+        letter-spacing: 4px;
+        text-align: center;
+    }
 }

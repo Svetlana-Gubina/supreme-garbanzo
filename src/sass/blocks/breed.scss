@@ -1,3 +1,12 @@
+.breed {
+    background-image: url("../../img/green.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
 .breed__container {
     @include indent();
     @include flex();
@@ -10,6 +19,23 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: content;
+
+    @include media-tablet {
+        background: transparent;
+        color: beige;
+        width: 80%;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include media-custom(1024px) {
+        color: #3b424b;
+        outline: 2px dashed purple;
+        padding: 1em 5em;
+        padding-top: 2em;
+        background-color: #f3efe9;
+    }
 }
 
 .breed__title {
@@ -22,6 +48,12 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: normal;
+
+    @include media-tablet {
+        padding: 0.5em;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 
 .breed__text {
@@ -32,4 +64,14 @@
     padding: 0.5em;
     text-align: center;
     backdrop-filter: blur(3px);
+
+    @include media-tablet {
+        font-size: 16px;
+        text-align: left;
+        padding: 0.5em 1em;
+    }
+
+    @include media-custom(1024px) {
+        margin-bottom: 50px;
+    }
 }

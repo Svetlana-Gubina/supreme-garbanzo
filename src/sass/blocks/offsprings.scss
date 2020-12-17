@@ -5,6 +5,15 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
+
+    @include media-tablet {
+        // outline: 2px dashed yellow;
+        width: 80%;
+        max-width: 80%;
+        background-color: transparent;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .offsprings__title {
@@ -17,6 +26,12 @@
     text-transform: uppercase;
     text-align: center;
     font-weight: normal;
+
+    @include media-tablet {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: beige;
+    }
 }
 
 .offsprings__text {
@@ -27,6 +42,27 @@
     padding: 0.5em;
     text-align: center;
     background-color: #ffffff;
+
+    width: 100%;
+    max-width: 100%;
+
+    @include media-tablet {
+        color: beige;
+        font-size: 16px;
+        padding: 0.5em 1em;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    @include media-custom(1024px) {
+        font-size: 16px;
+        color: #3b424b;
+        outline: 2px dashed purple;
+        padding: 1em 5em;
+        padding-top: 2em;
+        background-color: #f3efe9;
+        margin-bottom: 50px;
+    }
 }
 
 .offsprings__table {
@@ -39,6 +75,22 @@
         text-align: center;
         vertical-align: middle;
         background-color: #ffffff;
+
+        @include media-tablet {
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        @include media-custom(1024px) {
+            padding: 0.7em;
+            font-size: 16px;
+            color: #3b424b;
+            background-color: #d3a537;
+        }
+    }
+
+    @include media-custom(1024px) {
+        margin-bottom: 50px;
     }
 }
 
@@ -57,5 +109,15 @@
 
     &:active {
         opacity: 0.8;
+    }
+
+    @include media-tablet {
+        color: beige;
+        font-size: 16px;
+    }
+
+    @include media-custom(1024px) {
+        color: #3b424b;
+        padding: 0;
     }
 }

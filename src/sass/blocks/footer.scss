@@ -2,18 +2,13 @@
     @include indent();
     justify-content: center;
     align-items: center;
-    padding: 1%;
-
-    // include flex();
-    // lex-direction: column;
+    padding: 20px;
 
     @include media-tablet {
-        background-color: darkgray;
-        background-image: url("../../img/dark-pattern.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
         padding: 20px;
-        color: rgb(6, 46, 6);
+    }
+
+    @include media-custom(1024px) {
     }
 }
 
@@ -23,9 +18,14 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 2px;
 
     @include media-tablet {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    @include media-custom(1024px) {
+       text-transform: uppercase;
     }
 }
 
@@ -35,13 +35,7 @@
     max-width: 100%;
     @include flex();
     flex-direction: column;
-
-    @include media-tablet {
-        outline: 2px dashed rebeccapurple;
-        text-align: center;
-        background-color: rgba(250, 250, 250, 0.8);
-        backdrop-filter: blur(3px);
-    }
+    text-align: center;
 }
 
 .footer__name,
@@ -53,7 +47,11 @@
     line-height: 1.8;
 
     @include media-tablet {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    @include media-custom(1024px) {
+        letter-spacing: 2px;
     }
 }
 
@@ -65,6 +63,8 @@
     line-height: 1.8;
     font-weight: bold;
     color: rgb(6, 46, 6);
+    letter-spacing: 2px;
+    color: crimson;
 
     &:hover,
     &:focus {
@@ -73,6 +73,10 @@
 
     &:active {
         opacity: 0.8;
+    }
+
+    @include media-custom(1024px) {
+        font-size: 18px;
     }
 }
 
@@ -87,13 +91,16 @@
     @include flex();
     justify-content: space-between;
     align-items: center;
-    width: 120px;
-    outline: 2px dashed rebeccapurple;
+    max-width: 120px;
+    margin-right: auto;
+    margin-left: auto;
 
     @include media-tablet {
-       width: 200px;
-       margin-right: auto;
-       margin-left: auto;
+       max-width: 200px;
+    }
+
+    @include media-custom(1024px) {
+        justify-content: center;
     }
 }
 
@@ -123,8 +130,8 @@
 
     @include media-tablet {
         & svg {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
         }
      }
 }

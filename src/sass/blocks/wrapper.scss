@@ -3,19 +3,13 @@
   max-width: $desktop-width;
   min-width: $mobile-width;
 
-  // width: 320px;
-  // margin-right: auto;
-  // margin-left: auto;
-
   height: auto;
   @include indent();
   @include flex();
   flex-direction: column;
 
   @include media-tablet {
-    @media screen and (min-width: $tablet-width) {
-      outline: 4px dashed crimson;
-    }
+    // outline: 4px dashed crimson;
   }
 }
 

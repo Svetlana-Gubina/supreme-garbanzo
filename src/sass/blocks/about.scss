@@ -6,6 +6,36 @@
     width: 100%;
     max-width: 100%;
     background-color: #ffffff;
+
+    @include media-tablet {
+        width: 80%;
+        max-width: 80%;
+        background-color: transparent;
+        outline: 2px dashed rebeccapurple;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include media-custom(1024px) {
+        outline: 4px dashed purple;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+}
+
+.about__container--questions {
+    @include media-tablet {
+        @include flex();
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include media-custom(1024px) {
+        outline: 4px dashed purple;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    
 }
 
 .about__text {
@@ -15,11 +45,83 @@
     margin-bottom: 10px;
     padding: 0.5em;
     text-align: center;
+
+    @include media-tablet {
+        color: beige;
+        font-size: 16px;
+        padding: 0.5em 1em;
+        text-align: left;
+        margin-bottom: 50px;
+        outline: 2px dashed rebeccapurple;
+    }
+
+    @include media-custom(1024px) {
+        font-size: 16px;
+        color: #3b424b;
+        outline: 2px dashed purple;
+        padding: 1em 5em;
+        padding-top: 2em;
+        background-color: #f3efe9;
+    }
+}
+
+.about__text--welcome {
+    @include media-custom(1024px) {
+       text-align: center;
+       font-size: 20px;
+       width: 100%;
+       padding: 5em;
+       line-height: 2;
+       background-color: #d3a537;
+       box-shadow: 0 0 20px 20px #d3a537;
+       letter-spacing: 5px;
+       line-height: 2;
+    }
+}
+
+.about__span {
+    @include media-custom(1024px) {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+}
+
+.about__text--questions {
+    @include media-tablet {
+        margin-top: 50px;
+    }
+}
+
+.about__container--img {
+    @include indent();
+    @include flex();
+
+    @include media-custom(1024px) {
+        outline: 3px dashed rebeccapurple;
+        justify-content: space-between;
+        width: 50%;
+    }
 }
 
 .about__img {
     display: block;
     box-shadow: 0 0 10px 10px beige;
+
+    @include media-tablet {
+        // box-shadow: 0 0 10px 10px rgb(149, 224, 149);
+        margin-bottom: 50px;
+    }
+}
+
+.about__img--desktop {
+    display: none;
+
+    @include media-custom(1024px) {
+        display: block;
+    }
 }
 
 .about__link {
@@ -35,5 +137,10 @@
 
     &:active {
         opacity: 0.8;
+    }
+
+    @include media-tablet {
+        color: rgb(149, 224, 149);
+        font-size: 16px;
     }
 }
