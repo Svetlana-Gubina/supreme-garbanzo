@@ -6,8 +6,6 @@
     @include flex();
 
     min-height: 450px;
-    // background-image: url("../../img/color-cat-2.jpg");
-    // background-image: url("../../img/coon.jpg");
     background-image: url("../../img/cat-new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,8 +35,6 @@
     max-width: 100%;
     padding: 20px;
     backdrop-filter: blur(5px);
-    // background-color: #f3efe9;
-    // box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.3em);
 
     @include media-tablet {
         padding: 20px;
@@ -61,7 +57,7 @@
     line-height: 1;
     letter-spacing: 10px;
     text-align: center;
-    border-bottom: 1px solid crimson;
+    border-bottom: 1px solid $main-red-color;
 
     @include media-tablet {
         margin-left: 20px;
@@ -91,7 +87,7 @@
 
 .header__title--m {
     font-family: 'Courgette', cursive;
-    color: crimson;
+    color: $main-red-color;
     text-transform: uppercase;
     @include flex();
     justify-content: center;

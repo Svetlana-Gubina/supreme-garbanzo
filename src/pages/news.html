@@ -4,49 +4,42 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Unicun</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="../css/normalize.min.css">
       <link rel="stylesheet" href="../css/style.min.css">
    </head>
    <body>
       <div class="wrapper">
-         <header class="header">
-            <div class="header__inner">
-             <div class="header__flex">
-               <h1 class="header__title">Unicum <span class="header__title-span">питомник мейн-кунов</span></h1>
-               <nav class="main-nav">
-                  <ul class="main-nav__list menu-close">
-                     <li class="main-nav__item"><a class="main-nav__link" href="../index.html">Главная</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link" href="about.html">О нас / About us</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link" href="breed.html">О породе / About breed</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link" href="offsprings.html">Выпускники / Offsprings</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link" href="alters.html">Ветераны / War-horses (Кастраты / Alters)</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Новости / News</a></li>
-                     <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты / Contact uss</a></li>
-                  </ul>
-                  <button class="main-nav__toggle visually-hidden" type="button">Открыть/Закрыть меню</button>
-               </nav>
-             </div>
-            </div>
-           </header>
-        <section class="main news">
-         <div class="news__container">
-            <h2 class="news__title">Наши новости</h2>
-           <ul class="news__list">
-            <li class="news__item">
-               <a class="news__link" href="#">
-               <time class="news__time" datetime="2019-10-04">4 Октября 2019</time>
-               мы посетили нашу ветеринарную клинику в Санкт-Петербурге. Были осмотрены:
-               News from the Unicum cattery: October 4, 2019 we visited our veterinary clinics in St. Petersburg. Were reviewed:
-               Unicum Ole Lukoje (1st scan)
-               Unicum Bomba (1st scan)
-               Unicum Yucca (1st scan)
-               Unicum Intuition (1st scan)
-               Unicum Medea (1st scan)
-               Unicum Emoji(1st scan)
-               Unicum Tonika (1st scan)
-               Unicum Alma Mater (1st scan)
-               Shangri-La Basileus (1st scan)...</a>
-               </li>
+         <!--header-->
+        <header class="header">
+         <div class="header__inner">
+          <div class="header__flex">
+            <h1 class="header__title"><span class="header__title--top">Unicu<span class="header__title--m">m</span></span>  <span class="header__title-bottom">питомник мейн-кунов</span></h1>
+            <nav class="main-nav">
+               <ul class="main-nav__list menu-close">
+                  <li class="main-nav__item"><a class="main-nav__link" href="../index.html">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="about.html">О нас</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="breed.html">О породе </a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="offsprings.html">Выпускники</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="alters.html">Ветераны </a></li>
+                  <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Новости</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+               </ul>
+               <button class="main-nav__toggle visually-hidden" type="button">Открыть/Закрыть меню</button>
+            </nav>
+          </div>
+         </div>
+        </header>
+
+        <!--main-->
+        <main class="main">
+         <section class="main news">
+            <div class="news__container">
+               <h2 class="news__title">Наши новости</h2>
+              <ul class="news__list">
                <li class="news__item">
                   <a class="news__link" href="#">
                   <time class="news__time" datetime="2019-10-04">4 Октября 2019</time>
@@ -92,12 +85,29 @@
                         Unicum Alma Mater (1st scan)
                         Shangri-La Basileus (1st scan)...</a>
                         </li>
-           </ul>
-           <a class="main__index-link" href="../index.html">На главную</a>
-         </div>
-         
-        </section>
+                        <li class="news__item">
+                           <a class="news__link" href="#">
+                           <time class="news__time" datetime="2019-10-04">4 Октября 2019</time>
+                           мы посетили нашу ветеринарную клинику в Санкт-Петербурге. Были осмотрены:
+                           News from the Unicum cattery: October 4, 2019 we visited our veterinary clinics in St. Petersburg. Were reviewed:
+                           Unicum Ole Lukoje (1st scan)
+                           Unicum Bomba (1st scan)
+                           Unicum Yucca (1st scan)
+                           Unicum Intuition (1st scan)
+                           Unicum Medea (1st scan)
+                           Unicum Emoji(1st scan)
+                           Unicum Tonika (1st scan)
+                           Unicum Alma Mater (1st scan)
+                           Shangri-La Basileus (1st scan)...</a>
+                           </li>
+              </ul>
+              <a class="main__index-link" href="../index.html">На главную</a>
+            </div>
+           </section>
+        </main>
+
         
+        <!--footer-->
         <footer id="contacts" class="footer">
          <h2 class="visually-hidden">Контакты</h2>
          <div class="footer__container">
@@ -179,7 +189,6 @@
             </li>
             </ul>
          </div>
-         
         </footer>
       </div>
       <script src="../js/main.min.js"></script>

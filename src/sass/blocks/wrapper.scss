@@ -7,9 +7,5 @@
   @include indent();
   @include flex();
   flex-direction: column;
-
-  @include media-tablet {
-    // outline: 4px dashed crimson;
-  }
 }
 

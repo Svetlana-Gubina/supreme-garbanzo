@@ -6,7 +6,6 @@
       @include flex();
       justify-content: center;
       align-items: center;
-      // margin-bottom: 20px;
     }
 
     @include media-custom(1024px) {
@@ -33,7 +32,6 @@
     }
 
     @include media-custom(1024px) {
-      // margin-bottom: 50px;
       color: #3b424b;
       max-width: 30%;
       margin-right: 450px;
@@ -43,11 +41,9 @@
 
 .plans__text {
     @include indent();
-    font-size: 14px;
-    line-height: 2.2;
     padding: 0.5em;
-    text-align: center;
-    letter-spacing: 2px;
+    @include main-text();
+    line-height: 2.2;
 
     @include media-tablet {
       font-size: 16px;
@@ -68,13 +64,15 @@
 }
 
 .plans__link {
-  color: crimson;
+  color: $main-red-color;
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.8;
   display: block;
   padding: 0.5em;
+  letter-spacing: 4px;
+  outline: 1px dashed $main-red-color;
 
     &:hover,
     &:focus {
@@ -91,6 +89,7 @@
 
     @include media-custom(1024px) {
       line-height: 3;
-      border-bottom: 1px solid crimson;
+      border-bottom: 1px solid $main-red-color;
+      outline: none;
   }
 }
