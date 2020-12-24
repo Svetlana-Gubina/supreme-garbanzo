@@ -1,4 +1,8 @@
-.alters__container {
+.females {
+    @include indent();
+}
+
+.females__container {
     @include indent();
     @include flex();
     flex-direction: column;
@@ -15,18 +19,7 @@
     }
 }
 
-.alters__text {
-    @include indent();
-    @include main-text();
-    padding: 20px;
-    margin-bottom: 20px;
-    
-    @include media-tablet {
-        margin-bottom: 50px;
-    }
-}
-
-.alters__list {
+.females__list {
     width: 80%;
     max-width: 80%;
     @include indent();
@@ -40,20 +33,19 @@
     }
 }
 
-.alters__item {
+.females__item {
     @include indent();
     @include flex();
-    margin-bottom: 50px;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+    // flex-direction: column;
+    margin-bottom: 70px;
     
     @include media-tablet {
     }
 }
 
-.alters__link {
+.females__link {
     @include indent();
     width: 100%;
-    height: 100%;
     color: black;
     text-decoration: none;
     font-size: 14px;
@@ -64,6 +56,8 @@
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
 
     &:hover,
     &:focus {
@@ -97,5 +91,31 @@
     }
 
     @include media-custom(1024px) {
+    }
+}
+
+.females__link--pawpeds {
+    border: 2px solid $main-red-color;
+    width: 100%;
+    padding: 20px;
+    @include flex();
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    height: 20px;
+    // background-image: url('../../img/paws.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.8;
     }
 }

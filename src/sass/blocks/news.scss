@@ -16,7 +16,7 @@
     @include indent();
     font-size: 18px;
     padding: 0.2em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 10px;
     color: $main-red-color;
@@ -28,7 +28,6 @@
         width: 100%;
         font-size: 30px;
         text-transform: uppercase;
-        margin-bottom: 50px;
         padding: 0.5em;
         letter-spacing: 10px;
     }

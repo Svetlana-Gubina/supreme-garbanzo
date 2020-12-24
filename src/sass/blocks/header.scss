@@ -4,6 +4,7 @@
     min-width: $mobile-width;
     @include indent();
     @include flex();
+    margin-bottom: 20px;
 
     min-height: 450px;
     background-image: url("../../img/cat-new.jpg");

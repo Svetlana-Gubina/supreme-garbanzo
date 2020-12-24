@@ -1,66 +1,40 @@
 .offsprings__container {
     @include indent();
     @include flex();
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 100%;
-
-    @include media-tablet {
-        // outline: 2px dashed yellow;
-        width: 80%;
-        max-width: 80%;
-        background-color: transparent;
-        margin-right: auto;
-        margin-left: auto;
-    }
 }
 
 .offsprings__title {
     @include indent();
-    padding: 0.2em;
-    margin-bottom: 10px;
     font-size: 18px;
-    line-height: 1.4;
-    letter-spacing: 10px;
+    padding: 0.2em;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
+    letter-spacing: 10px;
+    color: $main-red-color;
 
     @include media-tablet {
+        padding: 0.5em;
         font-size: 24px;
         margin-bottom: 20px;
-        color: beige;
     }
 }
 
 .offsprings__text {
-    font-size: 14px;
-    line-height: 1.8;
     @include indent();
-    margin-bottom: 10px;
-    padding: 0.5em;
-    text-align: center;
-    background-color: #ffffff;
-
-    width: 100%;
-    max-width: 100%;
+    @include main-text();
+    padding: 20px;
 
     @include media-tablet {
-        color: beige;
         font-size: 16px;
-        padding: 0.5em 1em;
         text-align: left;
-        background-color: transparent;
     }
 
     @include media-custom(1024px) {
-        font-size: 16px;
-        color: #3b424b;
-        outline: 2px dashed purple;
-        padding: 1em 5em;
-        padding-top: 2em;
-        background-color: #f3efe9;
         margin-bottom: 50px;
     }
 }
@@ -85,11 +59,19 @@
             padding: 0.7em;
             font-size: 16px;
             color: #3b424b;
-            background-color: #d3a537;
         }
     }
 
+    @include media-tablet {
+        width: 80%;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     @include media-custom(1024px) {
+        width: 60%;
+        max-width: 60%;
         margin-bottom: 50px;
     }
 }
@@ -97,7 +79,7 @@
 .offsprings__table-link {
     display: block;
     padding: 0.5em 1em;
-    color: #a59d2ae3;
+    color: $main-red-color;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8;
@@ -112,12 +94,9 @@
     }
 
     @include media-tablet {
-        color: beige;
         font-size: 16px;
     }
 
     @include media-custom(1024px) {
-        color: #3b424b;
-        padding: 0;
     }
 }

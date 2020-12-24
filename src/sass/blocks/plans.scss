@@ -12,11 +12,10 @@
       margin-bottom: 100px;
       background-color: rgba(211, 211, 211, 0.2);
       padding: 100px 0;
-      background-image: url("../../img/side-cat.jpg");
+      background-image: url("../../img/page-female/mltaganka5_0\ copy.jpeg");
       background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 30% 100%;
-      background-position: 80% center;
+      background-size: contain;
+      background-position: 90% center;
     }
 }
 
@@ -68,11 +67,12 @@
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
-  line-height: 1.8;
+  // line-height: 1.8;
   display: block;
   padding: 0.5em;
   letter-spacing: 4px;
-  outline: 1px dashed $main-red-color;
+  line-height: 3;
+  border-bottom: 1px solid $main-red-color;
 
     &:hover,
     &:focus {
@@ -88,8 +88,5 @@
     }
 
     @include media-custom(1024px) {
-      line-height: 3;
-      border-bottom: 1px solid $main-red-color;
-      outline: none;
   }
 }
