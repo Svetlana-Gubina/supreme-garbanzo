@@ -9,7 +9,7 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
-    background-image: url("../../img/coon.jpg");
+    background-image: url("../img/coon.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: content;
@@ -19,6 +19,10 @@
     }
 
     @include media-custom(1024px) {
+        width: 80%;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -49,6 +53,7 @@
 
     @include media-custom(1024px) {
         margin-bottom: 50px;
+        text-align: left;
     }
 }
 
