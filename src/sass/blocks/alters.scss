@@ -76,7 +76,6 @@
 
     & p {
         @include indent();
-        font-size: 16px;
         letter-spacing: 3px;
         padding: 20px;
         color: $main-red-color;
@@ -88,11 +87,10 @@
 
     @include media-tablet {
         & p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         & img {
-           width: 400px;
         }
     }
 

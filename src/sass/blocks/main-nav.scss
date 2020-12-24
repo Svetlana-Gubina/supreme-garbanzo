@@ -5,13 +5,11 @@
     margin-top: 10px;
 
     @include media-tablet {
-        // outline: 2px dashed yellow;
     }
 
     @include media-custom(1024px) {
-        max-width: 50%;
+        max-width: 60%;
         height: auto;
-        margin-right: 50px;
     }
 }
 
@@ -62,11 +60,9 @@
         position: static;
         flex-direction: row;
         min-height: auto;
-    }
-
-    @include media-custom(1024px) {
         background-color: transparent;
         justify-content: space-between;
+        margin-left: 50px;
     }
 }
 
@@ -98,12 +94,9 @@
     }
 
     @include media-tablet {
-        font-size: 16px;
-        padding: 0.2em 1em;
     }
 
     @include media-custom(1024px) {
-        margin-right: 10px;
     }
 }
 

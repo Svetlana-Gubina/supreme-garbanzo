@@ -90,9 +90,6 @@
     background-size: cover;
 
     @include media-custom(1024px) {
-        // background-image: url('../../img/color-cat.jpg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
     }
 }
 
@@ -115,7 +112,7 @@
     font-weight: bold;
     padding: 0.5em;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     letter-spacing: 12px;
     text-transform: uppercase;
@@ -136,7 +133,6 @@
     }
 
     @include media-tablet {
-        font-size: 18px;
     }
 
     @include media-custom(1024px) {

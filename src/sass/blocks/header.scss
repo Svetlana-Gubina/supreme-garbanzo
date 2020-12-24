@@ -10,9 +10,9 @@
     background-image: url("../../img/cat-new.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     
     @include media-tablet {
-        background-position: center top;
     }
 
     @include media-custom(1024px) {
@@ -31,24 +31,22 @@
     @include indent();
     @include flex();
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
     width: 100%;
     max-width: 100%;
     padding: 20px;
     backdrop-filter: blur(5px);
 
     @include media-tablet {
-        padding: 20px;
     }
 
     @include media-custom(1024px) {
-        padding: 45px;
+        // padding: 45px;
     }
 }
 
 .header__title {
     @include indent();
-    padding-top: 10px;
     @include flex();
     flex-direction: column;
     justify-content: center;
@@ -112,7 +110,7 @@
     }
 
     @include media-custom(1024px) {
-        font-size: 16px;
+        // font-size: 16px;
         letter-spacing: 4px;
         text-align: center;
     }

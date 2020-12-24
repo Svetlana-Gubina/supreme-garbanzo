@@ -19,7 +19,6 @@
 
     @include media-tablet {
         padding: 0.5em;
-        font-size: 24px;
         margin-bottom: 20px;
     }
 }
@@ -30,7 +29,6 @@
     padding: 20px;
 
     @include media-tablet {
-        font-size: 16px;
         text-align: left;
     }
 
@@ -51,13 +49,11 @@
         background-color: #ffffff;
 
         @include media-tablet {
-            font-size: 16px;
             background-color: rgba(255, 255, 255, 0.3);
         }
 
         @include media-custom(1024px) {
             padding: 0.7em;
-            font-size: 16px;
             color: #3b424b;
         }
     }
@@ -94,7 +90,6 @@
     }
 
     @include media-tablet {
-        font-size: 16px;
     }
 
     @include media-custom(1024px) {

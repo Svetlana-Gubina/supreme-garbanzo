@@ -21,18 +21,16 @@
 
 .plans__inner {
     @include indent();
-    padding: 20px;
     width: 100%;
     max-width: 100%;
 
     @include media-tablet {
       max-width: 60%;
-      padding: 20px;
     }
 
     @include media-custom(1024px) {
       color: #3b424b;
-      max-width: 30%;
+      max-width: 40%;
       margin-right: 450px;
       align-self: center;
     }
@@ -40,13 +38,10 @@
 
 .plans__text {
     @include indent();
-    padding: 0.5em;
     @include main-text();
     line-height: 2.2;
 
     @include media-tablet {
-      font-size: 16px;
-      padding-bottom: 1em;
     }
 
     @include media-custom(1024px) {
@@ -67,7 +62,6 @@
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
-  // line-height: 1.8;
   display: block;
   padding: 0.5em;
   letter-spacing: 4px;
@@ -84,7 +78,6 @@
     }
 
     @include media-tablet {
-      font-size: 16px;
     }
 
     @include media-custom(1024px) {
